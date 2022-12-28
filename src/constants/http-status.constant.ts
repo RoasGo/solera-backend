@@ -1,7 +1,7 @@
 import * as httpStatus from 'http-status';
 
 const BUSINESS_ERROR = 950;
-const DB_ERROR = 500;
+const DB_ERROR = 900;
 
 const myHttpStatus = { BUSINESS_ERROR, DB_ERROR };
 

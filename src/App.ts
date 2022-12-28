@@ -8,6 +8,7 @@ import * as morgan from 'morgan';
 import Config from './utils/config';
 import { IDefault } from './utils/config-interfaces';
 import * as errorHandler from './helpers/error.helper';
+import { initDatabases } from './database';
 
 class App {
   public express: express.Application;
@@ -26,7 +27,7 @@ class App {
   }
 
   private initDatabase(): void {
-
+    initDatabases();
   }
 
   private setMiddlewares(): void {
